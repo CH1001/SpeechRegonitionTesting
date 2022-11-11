@@ -8,7 +8,7 @@ Created on Mon Jan 10 00:23:28 2022
 import speech_recognition as sr
 
 ### SPEECH RECOGNITION USING SPHINX ###
---------------------------------------------------------------
+#--------------------------------------------------------------
 def init_func(inquiry):
     r = sr.Recognizer()
     with sr.Microphone() as source:
@@ -25,7 +25,7 @@ def init_func(inquiry):
     return spch
 
 ### PARSING TEXT FUNCTION ###
---------------------------------------------------------------
+#--------------------------------------------------------------
         
 def parse(atext,wtext):
     if wtext in atext:
@@ -34,7 +34,7 @@ def parse(atext,wtext):
         return False
  
 ### TASK CHOOSING FUNCTION ###
---------------------------------------------------------------
+#--------------------------------------------------------------
 
 def choose(x):
     return {
@@ -44,7 +44,7 @@ def choose(x):
             }.get(x, 9)
     
 ### INITIALIZATION ###    
---------------------------------------------------------------
+#--------------------------------------------------------------
 
 assistantName = 'jarvis'
 
